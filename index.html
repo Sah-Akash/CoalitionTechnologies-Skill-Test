@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="meyerWeb.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:ital,wght@0,300;1,900&family=Oswald:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="heroContainer">
+      <img src="Image.png" alt="" />
+      <div id="hero">
+        <div class="logo">
+          <img src="Logo.png" alt="" />
+        </div>
+
+        <div class="nav">
+          <div class="navItem">
+            <a href="#historyContainer">01. HISTORY </a>
+          </div>
+          <div class="navItem"><a href="#teamContainer">02. TEAM</a></div>
+        </div>
+      </div>
+    </div>
+
+    <div id="stickyNav">
+      <div id="stickyNavWrapper">
+        <div class="logoWrapper">
+          <div class="logo">
+            <img src="Logo.png" alt="" />
+          </div>
+          <div class="logoText">
+            <div id="upperText">LOSANGELES</div>
+            <div id="lowerText">MOUNTAINS</div>
+          </div>
+        </div>
+        <div class="nav">
+          <div class="navItem">
+            <a href="#historyContainer">01. HISTORY </a>
+          </div>
+          <div class="navItem"><a href="#teamContainer">02. TEAM</a></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="historyContainer" id="historyContainer">
+      <img src="historyBackground.png" alt="" />
+
+      <div class="history">
+        <div class="historyText">
+          <div id="sectionNumber">01.</div>
+          <div id="sectionTitle">HISTORY</div>
+        </div>
+        <div class="sectionText">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in ante
+          viverra, rutrum erat rutrum, consectetur mi. Proin at maximus est.
+          Nullam purus ex, iaculis sed erat sed, blandit tincidunt quam. Cras
+          scelerisque id quam sed dignissim Pellentesque urna nunc, gravida quis
+          hendrerit ac, tristique ut quam. Vivamus suscipit dignissim tortor nec
+          congue.
+        </div>
+      </div>
+    </div>
+
+    <div class="carouselContainer">
+      <img src="carouselBackground.png" alt="" />
+      <div class="carouselWrapper">
+        <div class="carousel" id="carousel">
+          <div class="thumbnail" id="thumbnail0">
+            <img src="Group 10 copy.png" alt="" />
+          </div>
+          <div class="thumbnail" id="thumbnail1">
+            <img src="Group 8 copy.png" alt="" />
+          </div>
+          <div class="thumbnail" id="thumbnail2">
+            <img src="Group 10.png" alt="" />
+          </div>
+          <div class="thumbnail" id="thumbnail3">
+            <img src="Group 8.png" alt="" />
+          </div>
+        </div>
+        <div class="dots" style="text-align: center">
+          <span class="dot active" onclick="showThumbnails(0)"></span>
+          <span class="dot" onclick="showThumbnails(1)"></span>
+          <span class="dot" onclick="showThumbnails(2)"></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="teamContainer" id="teamContainer">
+      <div class="climbText">
+        <div class="sectionNumber2">02.</div>
+        <div class="sectionTitle2">CLIMB</div>
+        <div class="sectionText2">
+          Cras scelerisque id quam sed dignissim Pellentesque urna nunc, gravida
+          quis hendrerit ac, tristique ut quam. Vivamus suscipit dignissim
+          tortor nec congue.
+        </div>
+      </div>
+      <dib class="tabsWrapper">
+        <div class="tabs">
+          <div class="tabsContainer">
+            <div
+              class="tab selected"
+              id="tab1"
+              onclick="showContent('contentTab1Container')"
+            >
+              MOUNTAIN 1
+            </div>
+            <div
+              class="tab"
+              id="tab2"
+              onclick="showContent('contentTab2Container')"
+            >
+              MOUNTAIN 2
+            </div>
+          </div>
+        </div>
+        <div class="tabContent">
+          <div id="contentTab1Container">
+            <img src="tab1Background.png" alt="" />
+            <div class="textContentContainer">
+              <div class="textContent">
+                <div class="schedule">SCHEDULE</div>
+                <div class="scheduleDates">
+                  <div class="dates">
+                    25 Nov 2016
+                    <br />
+                    28 Nov 2016
+                    <br /><br />
+                    18 Dec 2016
+                    <br /><br />
+                    7 Jan 2017
+                  </div>
+                  <div class="event">
+                    Vestibulum viverra
+                    <br />
+                    Vestibulum viverra
+                    <br /><br />
+                    Vestibulum viverra
+                    <br /><br />
+                    Vestibulum viverra
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="contentTab2Container">
+            <img src="tab2Background.png" alt="" />
+            <div class="textContentContainer">
+              <div class="textContent">
+                <div class="schedule">SCHEDULE</div>
+                <div class="scheduleDates">
+                  <div class="dates">
+                    17 Nov 2016
+                    <br /><br />
+                    13 Dec 2016
+                    <br />
+                    28 Dec 2016
+                    <br /><br />
+                    9 Feb 2017
+                  </div>
+                  <div class="event">
+                    Vestibulum viverra
+                    <br /><br />
+                    Vestibulum viverra
+                    <br />
+                    Vestibulum viverra
+                    <br /><br />
+                    Vestibulum viverra
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </dib>
+    </div>
+  </body>
+
+  <footer>
+    <div class="footer">
+      <div class="logoWrapper">
+        <div class="logo">
+          <img src="Logo.png" alt="" />
+        </div>
+        <div class="logoText">
+          <div id="upperText">LOSANGELES</div>
+          <div id="lowerText">MOUNTAINS</div>
+        </div>
+      </div>
+
+      <div class="footerText">COPYRIGHT 2016. ALL RIGHTS RESERVED</div>
+    </div>
+  </footer>
+
+  <script src="scripts.js"></script>
+</html>

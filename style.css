@@ -1,0 +1,484 @@
+#heroContainer {
+  position: relative;
+  display: flex;
+}
+
+#heroContainer > img {
+  height: 100%;
+  width: 100%;
+}
+
+#hero {
+  top: 0;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  width: 60%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.logo > img {
+  width: 3vw;
+  height: 3vw;
+}
+
+#hero > .logo > img {
+  padding-top: 0.5vw;
+}
+
+.nav {
+  display: flex;
+  font-family: "Lato", sans-serif;
+  font-style: italic;
+  font-weight: 900;
+  color: white;
+  font-size: 0.65vw;
+  letter-spacing: 0.1vw;
+  line-height: 0.8vw;
+  width: 30vw;
+  gap: 2.7vw;
+  align-self: center;
+  justify-content: end;
+}
+
+.navItem {
+  border-bottom: white solid 0.1vw;
+  height: 100%;
+}
+/* end of first page */
+
+/* start of sticky nav */
+#stickyNav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.7vw 0vw;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+  background-color: white;
+}
+
+#stickyNavWrapper {
+  display: flex;
+  width: 60vw;
+  justify-content: space-between;
+}
+
+.logoWrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5vw;
+}
+
+.logo > img {
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  margin-top: -0.1vw;
+}
+
+.logoText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 0.2vw;
+}
+
+#upperText {
+  font-size: 1.5vw;
+  letter-spacing: 0.1vw;
+  color: #4d4d4d;
+  font-family: "Bebas Neue";
+  line-height: 2vw;
+  margin-top: -0.9vw;
+}
+
+#lowerText {
+  color: #414f6b;
+  font-family: "Bebas Neue";
+  font-size: 1.9vw;
+  line-height: 0.6vw;
+  letter-spacing: 0.01vw;
+}
+
+#stickyNavWrapper > .nav > .navItem {
+  border-bottom: 1px solid #414f6b;
+  color: #414f6b;
+}
+/* end of sticky nav */
+
+/* start of history container */
+.historyContainer {
+  position: relative;
+}
+
+.historyContainer > img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.history {
+  top: 3vw;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 60%;
+}
+
+.historyText {
+  display: flex;
+  flex-direction: row;
+}
+
+.navItem > a,
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+#sectionNumber {
+  color: #414f6b;
+  opacity: 50%;
+  font-size: 9vw;
+  font-family: "Oswald", sans-serif;
+  font-weight: bold;
+  letter-spacing: -0.2vw;
+}
+
+#sectionTitle {
+  align-self: flex-end;
+  color: #414f6b;
+  font-size: 2vw;
+  font-family: "Oswald", sans-serif;
+  margin-left: -1.7vw;
+  margin-bottom: 2vw;
+}
+
+.sectionText {
+  align-self: center;
+  width: 85%;
+  font-size: 1vw;
+  font-family: "Lato", sans-serif;
+  font-weight: 600;
+  color: black;
+  line-height: 1.5vw;
+}
+/* end of history section */
+
+/* start of carousel */
+.carouselContainer {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+}
+
+.carouselContainer > img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.carouselWrapper {
+  top: 0;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel {
+  display: flex;
+  gap: 1vw;
+  max-width: 100%;
+}
+
+.thumbnail > img {
+  width: 13vw;
+}
+
+.dot {
+  cursor: pointer;
+  height: 0.5vw;
+  width: 0.5vw;
+  margin: 0 0.1vw;
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  opacity: 20%;
+}
+
+.active,
+.dot:hover {
+  opacity: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .carousel {
+    gap: 1vw;
+  }
+
+  .thumbnail > img {
+    height: 7vw;
+  }
+
+  .dot {
+    height: 1vw;
+    width: 1vw;
+    margin: 0 0.2vw;
+  }
+}
+/* end of carousel */
+
+/* start of team section */
+.teamContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.climbText {
+  align-self: center;
+  display: flex;
+  flex-direction: row;
+  width: 55%;
+  padding-top: 0.5vw;
+  padding-bottom: 1.5vw;
+}
+
+.sectionNumber2 {
+  color: #414f6b;
+  opacity: 50%;
+  font-size: 9vw;
+  font-family: "Oswald", sans-serif;
+  font-weight: bold;
+  letter-spacing: -0.02vw;
+}
+
+.sectionTitle2 {
+  align-self: flex-end;
+  color: #414f6b;
+  font-size: 2vw;
+  font-family: "Oswald", sans-serif;
+  margin-left: -1.9vw;
+  margin-bottom: 2.1vw;
+}
+
+.sectionText2 {
+  margin-left: 2vw;
+  width: 40vw;
+  line-height: 1.7vw;
+  letter-spacing: 0.02vw;
+  font-size: 1vw;
+  align-self: center;
+  font-family: "Lato", sans-serif;
+}
+
+.tabs {
+  display: flex;
+  flex-direction: column;
+  background-color: #414f6b;
+  width: 100%;
+}
+
+.tabsContainer {
+  width: 60vw;
+  align-self: center;
+  display: flex;
+  font-size: 1.3vw;
+  font-family: "Oswald", sans-serif;
+}
+
+.tab {
+  color: #b0b4be;
+  height: 100%;
+  padding: 0.7vw 1vw;
+  text-decoration: underline;
+}
+
+.tab:hover {
+  background-color: #b0b4be;
+  color: #414f6b;
+}
+
+.selected {
+  background-color: #b0b4be;
+  color: #414f6b;
+}
+
+#contentTab1Container {
+  position: relative;
+}
+
+#contentTab1Container > img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.textContentContainer {
+  top: 6.2vw;
+  left: 4vw;
+  right: 0;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  position: absolute;
+  width: 60vw;
+}
+
+.textContent {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.7);
+  width: 17vw;
+  padding: 1.2vw 2.5vw;
+}
+
+.schedule {
+  font-size: 2vw;
+  font-family: "Oswald", sans-serif;
+  color: #414f6b;
+  font-weight: bold;
+}
+
+.scheduleDates {
+  display: flex;
+  font-size: 1vw;
+  justify-content: space-between;
+  padding-top: 1vw;
+  font-family: "Lato", sans-serif;
+  line-height: 1.4vw;
+}
+
+#contentTab2Container {
+  position: relative;
+  display: none;
+}
+
+#contentTab2Container > img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+@media screen and (max-width: 768px) {
+  .tabsWrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #414f6b;
+  }
+
+  .tabs {
+    display: contents;
+  }
+
+  .tabsContainer {
+    display: contents;
+    flex-direction: column;
+  }
+
+  .tabContent {
+    display: contents;
+  }
+
+  #tab1 {
+    order: 0;
+  }
+
+  #tab2 {
+    order: 2;
+  }
+
+  #contentTab1Container {
+    order: 1;
+  }
+
+  #contentTab2Container {
+    order: 3;
+  }
+}
+/* end of team section */
+
+/* start of footer */
+footer {
+  display: flex;
+  justify-content: center;
+  background-color: #414f6b;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-self: center;
+  width: 60vw;
+  color: #63769d;
+  padding: 1vw 0vw;
+}
+
+.logoWrapper {
+  height: 3vw;
+  width: 3vw;
+  display: flex;
+}
+
+.footer > .logoWrapper > .logo {
+  border-radius: 50%;
+  background-color: #63769d;
+}
+
+.footer > .logoWrapper > .logo > img {
+  mix-blend-mode: multiply;
+  margin-top: 0vw;
+}
+
+.footer > .logoWrapper > .logoText > #upperText {
+  color: #63769d;
+}
+
+.footer > .logoWrapper > .logoText > #lowerText {
+  color: #63769d;
+}
+
+.footerText {
+  color: #63769d;
+  font-family: "Lato", sans-serif;
+  font-style: italic;
+  display: flex;
+  align-self: center;
+  letter-spacing: 0.1vw;
+  font-size: 0.85vw;
+}
+
+@media screen and (max-width: 768px) {
+  footer {
+    border-top: 0.01vw solid black;
+  }
+}
+
+/* end of footer */
